@@ -1,0 +1,35 @@
+/* src/app/components/hero/hero.component.css */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  /* background-image: url('assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center; */
+  background-color: #0f1724;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: skyblue;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

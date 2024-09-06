@@ -1,0 +1,58 @@
+/* src/app/components/top-posts/top-posts.component.css */
+
+.top-posts {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.top-posts h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: skyblue;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of flex items */
+  justify-content: center; /* Center-aligns flex items horizontally */
+  gap: 20px; /* Space between flex items */
+  padding: 0 10px; /* Padding for responsiveness */
+}
+
+.post-card {
+  flex: 0 1 300px; /* Flex-grow: 0; Flex-shrink: 1; Flex-basis: 300px */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+  text-align: left; /* Aligns text inside post card */
+}
+
+.post-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.post-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.post-card button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-card button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

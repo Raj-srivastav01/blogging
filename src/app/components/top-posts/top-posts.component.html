@@ -1,0 +1,11 @@
+<section class="top-posts">
+  <h2>Top Post</h2>
+  <div class="posts">
+    <div class="post-card">
+      <img src="{{ topPost.image }}" alt="{{ topPost.title }}">
+      <h3>{{ topPost.title }}</h3>
+      <p>{{ topPost.excerpt }}</p>
+      <button routerLink="/blogs/{{ topPost.id }}">Read More</button>
+    </div>
+  </div>
+</section>

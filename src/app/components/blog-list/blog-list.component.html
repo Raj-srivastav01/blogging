@@ -1,0 +1,22 @@
+<section class="blog-list">
+  <h2>All Blogs</h2>
+  
+  <!-- Blog list container -->
+  <div class="blog-list-container">
+    <div class="blog-item" *ngFor="let blog of paginatedBlogs">
+      <img [src]="blog.image" alt="{{ blog.title }}" class="rounded-image">
+      <div class="blog-content">
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.excerpt }}</p>
+        <button routerLink="/blogs/{{ blog.id }}" class="read-more-btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination controls -->
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</section>

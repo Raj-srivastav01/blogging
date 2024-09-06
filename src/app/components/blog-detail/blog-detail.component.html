@@ -1,0 +1,9 @@
+<!-- src/app/components/blog-detail/blog-detail.component.html -->
+
+<section class="blog-detail">
+  <img src="{{ blog.image }}" alt="{{ blog.title }}" class="blog-image">
+  <h1>{{ blog.title }}</h1>
+  <p class="author">By {{ blog.author }}</p>
+  <p class="content">{{ blog.content }}</p>
+  <button routerLink="/blogs">Back to Blogs</button>
+</section>
